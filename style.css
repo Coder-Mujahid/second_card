@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 30px auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.container .products{
+    flex-basis: 280px;
+    margin: 20px 0;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+   
+   
+}
+.container .products .card .products-img img{
+    width: 100%;
+
+}
+
+.container .products .card .text{
+    text-align: center;
+    font-family: 'Quintessential', cursive;
+    background: rgb(244, 245, 241);
+    border-radius: 10px;
+}
+
+.container .products .card .text h2{
+    margin: 25px 0;
+}
+
+.container .products .card .text button{
+    margin: 25px 0;
+    width: 170px;
+    height: 50px;
+    padding: 10px 15px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: transparent;
+    transition: 0.5s ease;
+    cursor: pointer;
+    animation-name: color;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes color {
+    0%{
+        color: rgb(0, 255, 64);
+       
+    }
+    20%{
+        color: rgb(0, 255, 255);
+       
+    }
+    40%{
+        color: rgb(0, 17, 255);
+        
+    }
+    60%{
+        color: rgb(0, 217, 255);
+        
+    }
+    80%{
+        color: rgb(255, 72, 0);
+
+        
+    }
+    100%{
+        color: rgb(255, 0, 0);
+
+        
+    }
+}
+
+.container .products .card .text button:hover{
+
+    background: #ddd;
+}
+.container .products .card .text p{
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
